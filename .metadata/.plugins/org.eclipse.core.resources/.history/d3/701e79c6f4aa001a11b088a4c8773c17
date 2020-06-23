@@ -1,0 +1,5 @@
+package com.telusko.springmvc.dao;
+
+public class AlienDao {
+
+}

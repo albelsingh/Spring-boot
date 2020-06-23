@@ -1,0 +1,7 @@
+package com.telusko.securityapp;
+
+
+@Controller
+public class HomeController {
+
+}

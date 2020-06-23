@@ -1,0 +1,17 @@
+package com.telusko.springmvcboot;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class AlienController {
+	
+	@GetMapping("getAliens")
+	public String getAliens(Model m)
+	{
+		m.addAttribute("showAliens", repo.findAll());
+		return "showAliens";
+	}
+
+}

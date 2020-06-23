@@ -1,0 +1,31 @@
+package com.telusko.springmvc.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity(name="Alien")
+public class Alien {
+	@Id
+	private long aid;
+
+	private String aname;
+	
+	public long getAid() {
+		return aid;
+	}
+	public void setAid(long aid) {
+		this.aid = aid;
+	}
+	public String getAname() {
+		return aname;
+	}
+	public void setAname(String aname) {
+		this.aname = aname;
+	}
+	@Override
+	public String toString() {
+		return "Alien [aid=" + aid + ", aname=" + aname + "]";
+	}
+	
+	
+
+}
